@@ -1,19 +1,39 @@
-.main-box {
+.app-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     height: 200px;
     background-color: red;
-    margin: 0 50px;
+    margin: 10px 50px;
+    padding: 0 20px;
 }
 
-.topic-box {
+.app-topic {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     background-color: white;
-    width: 100px;
-    height: 50px;
+    width: 200px;
+    height: 80px;
+}
+
+.daily-box {
+    display: flex;
+    justify-content: space-between;
+
+    height: 130px;
+    background-color: red;
+    margin: 10px 50px;
+    padding: 20px;
+}
+
+.daily-topic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+    width: 300px;
 }
