@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento - Açai Prime</title>
 
-    <link ref="stylesheet" href="/static/css/normalize.css">
-    <link ref="stylesheet" href="/static/css/acaiprime.css">
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/acaiprime.css">
 </head>
 <body>
     <header>
@@ -14,10 +14,25 @@
     </header>
 
     <section>
-        <form>
+        <form class="form-box">
             <div class="field">
-                <label for="v_total" class="info">Valor total:</label>
-                <input type="number" id="v_total" min="0" step="1" required>
+                <label for="form_total_value" class="info">Valor total recebido:</label>
+                <input type="number" id="form_total_value" min="0" step="1" required>
+            </div>
+
+            <div class="field">
+                <label for="form_total_orders" class="info">Total de pedidos do período:</label>
+                <input type="number" id="form_total_orders" min="0" step="1" required>
+            </div>
+
+            <div class="field">
+                <label for="form_my_deliveries" class="info">Quantia de entregas feitas por mim:</label>
+                <input type="number" id="form_my_deliveries" min="0" step="1" required>
+            </div>
+
+            <div class="field">
+                <label for="form_maria_orders">Total de montagens da Maria:</label>
+                <input type="number" id="form_maria_orders" min="0" step="1" required>
             </div>
         </form>
     </section>

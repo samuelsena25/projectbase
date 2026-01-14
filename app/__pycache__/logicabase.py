@@ -12,7 +12,7 @@ profit = orders*5
 tax_delivery = x_delivery*8
 store_money = value-profit-tax_delivery
 
-print(f""""
+print(f"""
     Total de pedidos: {orders}
     Total de entregas: {x_delivery}
     Valor recebido: {value}
