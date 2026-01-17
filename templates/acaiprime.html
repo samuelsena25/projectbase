@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/static/css/normalize.css">
     <link rel="stylesheet" href="/static/css/acaiprime.css">
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
 </head>
 <body>
     <header>
@@ -39,9 +39,14 @@
 
             <button type="button" id="btnCalcular">Calcular</button>
         </form>
+        <div class="resultSection">
+            <h2>Resultado</h2>
+            <div id="resultBox" class="resultBox">
+                <div id="resultPart1" class="resultPart1">teste</div>
+                <div id="resultPart2" class="resultPart2">teste</div>
+            </div>
+        </div>
     </section>
-
-    <section id="resultSection" style="margin-top: 20px;"></section>
 
     <footer>
         <p>rodapé</p>
