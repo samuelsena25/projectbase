@@ -18,13 +18,14 @@
     background-color: white;
     width: 200px;
     height: 80px;
+    padding: 6px;
 }
 
 .daily-box {
     display: flex;
     justify-content: space-between;
 
-    height: 130px;
+    height: auto;
     background-color: red;
     margin: 10px 50px;
     padding: 20px;
@@ -37,4 +38,33 @@
 
     background-color: white;
     width: 300px;
+    padding: 6px;
+}
+
+.bills-topic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #fff;
+    width: 300px;
+    padding: 6px;
+}
+
+.bills-topic > h2, h3 {
+    text-align: center;
+}
+
+.bills-static {
+    padding: 0 0 14px;
+}
+
+.title {
+    padding: 2px 0 16px;
+}
+
+.bills-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
 }
